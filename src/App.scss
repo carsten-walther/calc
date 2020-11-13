@@ -1,0 +1,141 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #222222;
+
+  .wrapper {
+    padding: 2px;
+    margin: auto;
+    background: #454649;
+    border-radius: 4px;
+    box-shadow: 0 1px 10px #111111;
+  }
+}
+
+.modal-backdrop {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+
+  .modal-window {
+    padding: 1rem;
+    margin: auto;
+    background: #454649;
+    border-radius: 4px;
+    box-shadow: 0 1px 10px #111111;
+    width: 20rem;
+    height: auto;
+
+    .modal-header {
+      padding: 0;
+      margin: 0 0 1rem 0;
+      color: white;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+
+    .modal-body {
+      padding: 0;
+      margin: 0 0 1rem 0;
+      color: white;
+      font-size: 1.5rem;
+      line-height: 1rem;
+      text-align: center;
+    }
+
+    .modal-footer {
+      padding: 1rem 0 0 0;
+      margin: 1rem 0 0 0;
+      color: white;
+      border-top: 1px solid #333;
+      text-align: right;
+    }
+
+    input {
+      padding: 0.5rem 1rem;
+      margin: 0;
+      border: 0 none;
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+
+    button {
+      padding: 0 1rem;
+      margin: 0 0 0 2px;
+      width: auto;
+
+      &.cancel {
+        background: #2196F3;
+      }
+
+      &.submit {
+        background: #009688;
+      }
+    }
+  }
+}
+
+table {
+  padding: 0;
+  margin: 0;
+
+  tr {
+    padding: 0;
+    margin: 0;
+
+    td {
+      padding: 0;
+      margin: 0;
+
+      &.result {
+        padding: 2rem 1rem 1.5rem 1rem;
+        color: white;
+        font-size: 3.5rem;
+        line-height: 1rem;
+        text-align: right;
+      }
+    }
+  }
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: 0 none;
+  color: white;
+  background: #7A7B7D;
+  font-size: 20px;
+  line-height: 1rem;
+  width: 3.5rem;
+  height: 3rem;
+  cursor: pointer;
+
+  &.yellow {
+    color: white;
+    background: #F99625;
+    font-size: 20px;
+  }
+
+  &.dark-gray {
+    color: white;
+    background: #606164;
+  }
+
+  &.zero {
+    width: 100%;
+  }
+}
